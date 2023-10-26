@@ -1,9 +1,16 @@
 import ballerinax/github;
 import ballerina/io;
 
+// -------------------------
+//        Task 1
+// -------------------------
+// TODO: Enter your name and university ID here, ex:- John , 171024M
 final string studentName = ?;
 final string studentUniversityID = ?;
 
+// -------------------------
+//        Task 2
+// -------------------------
 //TODO: Enter your GitHub personal access token here. 
 //      If you haven't a token, please obtain a GitHub personal access token with repo access using the guidelines in
 //      https://docs.github.com/en/enterprise-server@3.6/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token
@@ -19,7 +26,10 @@ public function main() returns error? {
 function starRepository(string token) returns error? {
     final github:Client ghClient = check new ({auth: {token}});
 
-    //TODO: Get all the repositories of the organization assign it to a variable named repos.
+    // -------------------------
+    //        Task 3
+    // -------------------------
+    //TODO: Get all the repositories of the organization assign it to a variable named `repos`.
     //      Hint: Use the getRepositories() function of the ghClient. https://lib.ballerina.io/ballerinax/github/4.6.0#Client-getRepositories
     
 
@@ -27,7 +37,10 @@ function starRepository(string token) returns error? {
         string repoName = repo.name;
         string owner = repo.owner.login;
 
-        //TODO: Star the repository using the starRepository() function of the ghClient and assign it to a variable named starRepository.
+        // -------------------------
+        //        Task 4
+        // -------------------------
+        //TODO: Star the repository using the starRepository() function of the ghClient and assign it to a variable named `starRepository`.
         //      https://lib.ballerina.io/ballerinax/github/4.6.0#Client-starRepository
         
 
