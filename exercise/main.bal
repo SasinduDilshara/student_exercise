@@ -11,7 +11,7 @@ final string studentUniversityID = ?;
 // -------------------------
 //        Task 2
 // -------------------------
-//TODO: Enter your GitHub personal access token here. 
+//TODO: Enter your GitHub personal access token(classic) here. 
 //      If you haven't a token, please obtain a GitHub personal access token with repo access using the guidelines in
 //      https://docs.github.com/en/enterprise-server@3.6/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token
 final string githubToken = ?;
