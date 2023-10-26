@@ -31,6 +31,7 @@ function starRepository(string token) returns error? {
     // -------------------------
     //TODO: Get all the repositories of the organization assign it to a variable named `repos`.
     //      Hint: Use the getRepositories() function of the ghClient. https://lib.ballerina.io/ballerinax/github/4.6.0#Client-getRepositories
+    //      Hint: You MUST use the 'orgName' as the first argument and 'true' as the second argument when calling the function. ex:- getRepositories(orgName, true);
     
 
     check repos.forEach(function(github:Repository repo) {
